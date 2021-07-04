@@ -66,8 +66,9 @@ test.serial('getValidAccessToken -> Valid time', async t => {
         refresh_token : 'refreshToken-1'
     };
 
-    let response = await oAuthConnector.getValidAccessToken(tokenInfo);
-    t.deepEqual(response, tokenInfo);
+    let response = await oAuthConnector.getValidTokenInfo(tokenInfo);
+    t.deepEqual(response.tokenInfo, tokenInfo);
+    t.deepEqual(response.isValid, true);
 });
 
 test.serial('getValidAccessToken -> Expired time', async t => {
@@ -90,8 +91,9 @@ test.serial('getValidAccessToken -> Expired time', async t => {
     nocks.getAccessToken(expectedResponse);
 
 
-    let response = await oAuthConnector.getValidAccessToken(tokenInfo);
-    t.deepEqual(response, expectedResponse);
+    let response = await oAuthConnector.getValidTokenInfo(tokenInfo);
+    t.deepEqual(response.tokenInfo, expectedResponse);
+    t.deepEqual(response.isValid, false);
 });
 
 test('getCodeFromRedirectedUrl -> Simple string', async t => {

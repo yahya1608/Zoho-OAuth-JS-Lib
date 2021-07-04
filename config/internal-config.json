@@ -2,6 +2,18 @@
     "US" : {
         "base_domain" : "https://accounts.zoho.com"
     },
+    "EU" : {
+        "base_domain" : "https://accounts.zoho.eu"
+    },
+    "CN" : {
+        "base_domain" : "https://accounts.zoho.com.cn"
+    },
+    "AU" : {
+        "base_domain" : "https://accounts.zoho.com.au"
+    },
+    "IN" : {
+        "base_domain" : "https://accounts.zoho.in"
+    },
     "auth_path" : "/oauth/v2/auth",
     "token_path" : "/oauth/v2/token"
 }
