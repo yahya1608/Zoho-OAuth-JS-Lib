@@ -1,0 +1,36 @@
+{
+  "name": "zoho-oauth-js-lib",
+  "version": "1.0.0",
+  "description": "Zoho OAuth Generation Library for Node Apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yahya1608/Zoho-OAuth-JS-Lib.git"
+  },
+  "author": "Yahya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yahya1608/Zoho-OAuth-JS-Lib/issues"
+  },
+  "homepage": "https://github.com/yahya1608/Zoho-OAuth-JS-Lib#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "lodash": "^4.17.21",
+    "qs": "^6.10.1"
+  },
+  "devDependencies": {
+    "ava": "^3.15.0",
+    "nock": "^13.1.0"
+  },
+  "ava": {
+    "files": [
+      "tests/**/*"
+    ],
+    "failFast": false,
+    "failWithoutAssertions": false,
+    "verbose": true
+  }
+}

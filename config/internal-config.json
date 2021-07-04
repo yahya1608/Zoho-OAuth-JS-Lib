@@ -1,0 +1,7 @@
+{
+    "US" : {
+        "base_domain" : "https://accounts.zoho.com"
+    },
+    "auth_path" : "/oauth/v2/auth",
+    "token_path" : "/oauth/v2/token"
+}
