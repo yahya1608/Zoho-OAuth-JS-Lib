@@ -27,7 +27,8 @@
   },
   "ava": {
     "files": [
-      "tests/**/*"
+      "tests/**/*",
+      "!tests/test-helpers"
     ],
     "failFast": false,
     "failWithoutAssertions": false,

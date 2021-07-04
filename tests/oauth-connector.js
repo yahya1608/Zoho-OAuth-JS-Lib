@@ -1,4 +1,4 @@
-const Nocks = require("./helpers/nocks");
+const Nocks = require("./test-helpers/nocks");
 const test = require('ava');
 const OAuthConnector = require('../lib/oauth-connector');
 const Enum = require('../lib/enum')
