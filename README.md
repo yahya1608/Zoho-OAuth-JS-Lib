@@ -37,7 +37,7 @@ The inputs to this function are
 This will give the generated token info in the following json schema
     ```
         {
-            expires_in : '2324343'
+            expires_in : '021-07-17T09:20:25.190Z'
             token_type : 'bearer'
             access_token : 'access token generated'
             refresh_token : 'refresh token generated'
@@ -50,7 +50,7 @@ This json can be persisted as it is. Moving forward, this json will be refered a
         {
             isValid : false,
             tokenInfo : {
-                expires_in : '2324343'
+                expires_in : '021-07-17T09:20:25.190Z'
                 token_type : 'bearer'
                 access_token : 'access token generated'
                 refresh_token : 'refresh token generated'
