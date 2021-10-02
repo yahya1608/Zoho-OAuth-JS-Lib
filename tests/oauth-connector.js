@@ -34,7 +34,7 @@ function compareResposne(response, expectedResponse, t){
 test('getAuthorizationUrl', async t => {
     const oAuthConnector = t.context.oAuthConnector;
     let url = oAuthConnector.getAuthorizationUrl(Enum.AccessType.Offline, true, '123');
-    t.deepEqual(url, 'https://accounts.zoho.com/oauth/v2/auth?response_type=code&client_id=test-client-id&redirect_uri=http%3A%2F%2Flocalhost%2Fsample-redirect&scope=scope1%2Cscope2&accessType=offline&prompt=consent&state=123')
+    t.deepEqual(url, 'https://accounts.zoho.com/oauth/v2/auth?response_type=code&client_id=test-client-id&redirect_uri=http%3A%2F%2Flocalhost%2Fsample-redirect&scope=scope1%2Cscope2&access_type=offline&prompt=consent&state=123')
 });
 
 
