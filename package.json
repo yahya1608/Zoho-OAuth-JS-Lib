@@ -1,6 +1,6 @@
 {
   "name": "zoho-oauth-js-lib",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Zoho OAuth Generation Library for Node Apps",
   "main": "index.js",
   "scripts": {
